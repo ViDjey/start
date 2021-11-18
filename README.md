@@ -1,2 +1,2 @@
 # start
-first project
+print("hello word")
