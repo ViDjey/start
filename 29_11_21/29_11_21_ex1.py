@@ -1,15 +1,19 @@
 def func(str):
-     fl1=0
-     for i in range (len(str)):
-         if str[i].isdigit()==1:
-             fl1=1
-     if len(str)>6 and fl1==1 and str.isdigit()==0 and str.lower().find("password")==-1:
-         return True
-     else:
-         return False
+    """Check whether 'str' meets the necessary conditions to be a password
+       Keyword argument:
+       str-type string
+    """
+    fl1 = 0
+    for i in range (len(str)):
+        if str[i].isdigit() == 1:
+            fl1 = 1
+    if len(str)>6 and fl1==1 and str.isdigit()==0 and str.lower().find("password")==-1:
+        return True
+    else:
+        return False
 
                  
-s=input('Введите строку: ')
+s = input('Введите строку: ')
 if func(s):
     print ("Строка похожа на пароль")
 else:
