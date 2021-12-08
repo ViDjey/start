@@ -1,3 +1,5 @@
-S=float(input("Введите радиус круга: "))
 import math
-print(f"Площадь круга= {S**2*math.pi}")
+
+
+S = float(input("Введите радиус круга: "))
+print(f"Площадь круга= {S**2 * math.pi}")
