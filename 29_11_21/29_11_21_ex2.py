@@ -1,10 +1,15 @@
 def f(*args):
-    S=0
+    """Returns summation of arguments
+    Keyword arguments:
+    Presumably the arguments should be of type int
+    Will process other types as well
+    """
+    S = 0
     for i in range(len(args)):
         try: 
-             S+=args[i]
+            S += args[i]
         except TypeError:
-             print(f"Тип аргумента= {args[i]} не подходит для суммирования")
+            print(f"Тип аргумента= {args[i]} не подходит для суммирования")
     return S
 
 
